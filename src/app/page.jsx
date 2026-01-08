@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const HomePage = () => {
   return (
-    <section className="w-full h-full bg-gradient-to-br from-gray-50 via-white to-gray-50 flex items-center">
+    <section className="w-full h-full bg-linear-to-br from-gray-50 via-white to-gray-50 flex items-center">
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8 md:py-18 py-12">
         <div className="grid gap-12 lg:gap-16 md:grid-cols-2 items-center">
@@ -13,7 +13,7 @@ const HomePage = () => {
             {/* Título principal */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
               Bienvenido a{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4C5F26] to-[#6B8635]">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#4C5F26] to-[#6B8635]">
                 Adigma
               </span>
             </h1>
@@ -41,10 +41,10 @@ const HomePage = () => {
           {/* Columna de imagen */}
           <div className="flex justify-center md:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#4C5F26]/10 to-transparent rounded-full blur-2xl scale-110"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-[#4C5F26]/10 to-transparent rounded-full blur-2xl scale-110"></div>
               
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#4C5F26]/20 to-transparent rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-[#4C5F26]/20 to-transparent rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                 <div className="relative bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-2xl group-hover:shadow-[#4C5F26]/20 transition-all duration-300 group-hover:-translate-y-2">
                   <Image
                     src="/images/logo.png"
