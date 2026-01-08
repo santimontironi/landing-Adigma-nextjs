@@ -30,7 +30,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/nosotros"
+              href="#nosotros"
               className="text-gray-700 hover:text-[#4C5F26] transition-colors duration-300 font-medium"
             >
               Quienes somos
@@ -38,7 +38,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/servicios"
+              href="#servicios"
               className="text-gray-700 hover:text-[#4C5F26] transition-colors duration-300 font-medium"
             >
               Servicios
@@ -46,7 +46,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/contacto"
+              href="#contacto"
               className="text-gray-700 hover:text-[#4C5F26] transition-colors duration-300 font-medium"
             >
               Contacto
@@ -84,7 +84,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/nosotros"
+              href="#nosotros"
               className="block text-white hover:bg-[#5d7230] px-5 py-4 rounded-xl transition-all duration-300 font-medium text-lg"
               onClick={() => setIsOpen(false)}
             >
@@ -93,7 +93,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/servicios"
+              href="#servicios"
               className="block text-white hover:bg-[#5d7230] px-5 py-4 rounded-xl transition-all duration-300 font-medium text-lg"
               onClick={() => setIsOpen(false)}
             >
@@ -102,7 +102,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/contacto"
+              href="#contacto"
               className="block text-white hover:bg-[#5d7230] px-5 py-4 rounded-xl transition-all duration-300 font-medium text-lg"
               onClick={() => setIsOpen(false)}
             >
