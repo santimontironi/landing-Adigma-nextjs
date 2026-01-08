@@ -7,10 +7,8 @@ const HomePage = () => {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8 md:py-18 py-12">
         <div className="grid gap-12 lg:gap-16 md:grid-cols-2 items-center">
 
-          {/* Columna de texto */}
           <div className="text-center md:text-left space-y-8">
           
-            {/* Título principal */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
               Bienvenido a{" "}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-[#4C5F26] to-[#6B8635]">
@@ -18,14 +16,12 @@ const HomePage = () => {
               </span>
             </h1>
 
-            {/* Descripción */}
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl mx-auto md:mx-0">
               Soluciones de software empresarial basadas en Odoo.
               Digitalizamos y optimizamos los procesos de tu empresa
               para que puedas crecer con control y eficiencia.
             </p>
 
-            {/* Botones de acción */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
               <button className="group relative bg-[#4C5F26] text-white px-8 py-4 rounded-lg font-semibold shadow-lg shadow-[#4C5F26]/25 hover:shadow-xl hover:shadow-[#4C5F26]/30 hover:-translate-y-0.5 transition-all duration-200">
                 Solicitar demo
@@ -38,7 +34,6 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Columna de imagen */}
           <div className="flex justify-center md:justify-end">
             <div className="relative">
               <div className="absolute inset-0 bg-linear-to-br from-[#4C5F26]/10 to-transparent rounded-full blur-2xl scale-110"></div>
