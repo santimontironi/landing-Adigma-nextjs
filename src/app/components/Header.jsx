@@ -62,7 +62,7 @@ const Header = () => {
       </button>
 
 
-      <nav className={`h-screen w-72 fixed top-0 right-0 bg-[#4C5F26] flex flex-col z-50 shadow-2xl transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'
+      <nav className={`xl:hidden h-screen w-72 fixed top-0 right-0 bg-[#4C5F26] flex flex-col z-50 shadow-2xl transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
         <div className="flex justify-end p-5">
           <button
