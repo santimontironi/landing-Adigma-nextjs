@@ -19,11 +19,11 @@ const Header = () => {
         />
       </div>
       <nav>
-        <ul className="hidden md:flex items-center gap-10">
+        <ul className="hidden md:flex items-center gap-6">
           <li>
             <Link
               href="/"
-              className="text-white hover:text-gray-200 transition-colors duration-300 font-medium"
+              className="text-white hvr-bounce-to-right p-2 rounded-lg transition-colors duration-300 font-medium"
             >
               Inicio
             </Link>
@@ -31,7 +31,7 @@ const Header = () => {
           <li>
             <Link
               href="#nosotros"
-              className="text-white hover:text-gray-200 transition-colors duration-300 font-medium"
+              className="text-white hvr-bounce-to-right p-2 rounded-lg transition-colors duration-300 font-medium"
             >
               Quienes somos
             </Link>
@@ -39,7 +39,7 @@ const Header = () => {
           <li>
             <Link
               href="#servicios"
-              className="text-white hover:text-gray-200 transition-colors duration-300 font-medium"
+              className="text-white hvr-bounce-to-right p-2 rounded-lg transition-colors duration-300 font-medium"
             >
               Servicios
             </Link>
@@ -47,7 +47,7 @@ const Header = () => {
           <li>
             <Link
               href="#contacto"
-              className="text-white hover:text-gray-200 transition-colors duration-300 font-medium"
+              className="text-white hvr-bounce-to-right p-2 rounded-lg transition-colors duration-300 font-medium"
             >
               Contacto
             </Link>

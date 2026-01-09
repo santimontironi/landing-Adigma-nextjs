@@ -43,8 +43,8 @@ const Services = () => {
             <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
               Implementamos Odoo de forma personalizada según las necesidades de tu empresa
             </p>
-            <Link href='/#contacto' className="bg-white text-[#4C5F26] font-bold px-4 py-4 xl:px-8 xl:py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
-              Solicitar Consultoría Gratuita
+            <Link href='/#contacto' className="bg-white text-[#4C5F26] font-bold px-4 py-5 xl:px-8 xl:py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
+              Solicitar demo
             </Link>
           </div>
         </div>
