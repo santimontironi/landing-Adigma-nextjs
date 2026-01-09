@@ -7,8 +7,8 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full z-50 relative flex items-center justify-between h-35 pr-12 pl-5 xl:px-12 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
-      <div>
+    <header className="w-full z-50 relative flex items-center justify-between h-[18vh] pr-12 pl-5 xl:px-12 bg-[#4C5F26] shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
+      <div className="bg-white w-30 rounded-xl shadow-sm h-25 flex justify-center items-center">
         <Image
           src="/images/logo.png"
           alt="Adigma Logo"
@@ -19,11 +19,11 @@ const Header = () => {
         />
       </div>
       <nav>
-        <ul className="hidden md:flex items-center gap-7">
+        <ul className="hidden md:flex items-center gap-10">
           <li>
             <Link
               href="/"
-              className="text-gray-700 hover:text-[#4C5F26] transition-colors duration-300 font-medium"
+              className="text-white hover:text-gray-200 transition-colors duration-300 font-medium"
             >
               Inicio
             </Link>
@@ -31,7 +31,7 @@ const Header = () => {
           <li>
             <Link
               href="#nosotros"
-              className="text-gray-700 hover:text-[#4C5F26] transition-colors duration-300 font-medium"
+              className="text-white hover:text-gray-200 transition-colors duration-300 font-medium"
             >
               Quienes somos
             </Link>
@@ -39,7 +39,7 @@ const Header = () => {
           <li>
             <Link
               href="#servicios"
-              className="text-gray-700 hover:text-[#4C5F26] transition-colors duration-300 font-medium"
+              className="text-white hover:text-gray-200 transition-colors duration-300 font-medium"
             >
               Servicios
             </Link>
@@ -47,7 +47,7 @@ const Header = () => {
           <li>
             <Link
               href="#contacto"
-              className="text-gray-700 hover:text-[#4C5F26] transition-colors duration-300 font-medium"
+              className="text-white hover:text-gray-200 transition-colors duration-300 font-medium"
             >
               Contacto
             </Link>
@@ -55,10 +55,10 @@ const Header = () => {
         </ul>
       </nav>
       <button
-        className="xl:hidden bg-[#4C5F26] p-3 rounded-2xl hover:bg-[#3d4c1f] transition-colors duration-300 shadow-md"
+        className="xl:hidden bg-white p-3 rounded-2xl hover:bg-gray-100 transition-colors duration-300 shadow-md"
         onClick={() => setIsOpen(true)}
       >
-        <i className="bi bi-list text-3xl text-white"></i>
+        <i className="bi bi-list text-3xl text-[#4C5F26]"></i>
       </button>
 
 
