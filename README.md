@@ -16,4 +16,4 @@ Landing page moderna y profesional para **Adigma**, empresa especializada en imp
 
 **Última actualización:** Enero 2026  
 **Versión:** 1.0.0  
-**Autor:** Equipo Adigma
+**Autor:** Santiago Montironi - Equipo Adigma
