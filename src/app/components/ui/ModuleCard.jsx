@@ -1,6 +1,6 @@
-const ModuleCard = ({ icon, title, description, features, color }) => {
+const ModuleCard = ({ icon, title, description, features }) => {
   return (
-    <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-[#4C5F26]/30">
+    <div className="group bg-white rounded-2xl shadow-[5px_5px_12px_rgba(0,0,0,0.8)] hover:-translate-y-1 transition-all duration-300 overflow-hidden ">
      
       <div className={`bg-linear-to-br from-[#4C5F26] to-[#5d7230] p-8 relative overflow-hidden`}>
         <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>

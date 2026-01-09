@@ -7,8 +7,8 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full z-50 relative flex items-center justify-between h-[18vh] pr-12 pl-5 xl:px-12 bg-[#4C5F26] shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
-      <div className="bg-white w-30 rounded-xl shadow-sm h-25 flex justify-center items-center">
+    <header className="w-full z-50 relative flex items-center justify-between h-[18vh] pr-7 pl-7 xl:px-12 bg-[#4C5F26] shadow-[0_4px_20px_rgba(0,0,0,0.12)]">
+      <div className="bg-white xl:w-30 rounded-xl shadow-sm xl:h-25 w-20 h-20 flex justify-center items-center">
         <Image
           src="/images/logo.png"
           alt="Adigma Logo"

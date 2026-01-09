@@ -63,7 +63,7 @@ const AboutUs = () => {
                 Nuestros Valores
               </h3>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="flex flex-col items-center text-center gap-3 p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300">
                 <i className="bi bi-gear-fill text-white text-3xl"></i>
                 <span className="text-white font-semibold text-lg">Excelencia Técnica</span>

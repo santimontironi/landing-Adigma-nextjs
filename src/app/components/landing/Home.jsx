@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Home = () => {
   return (
-    <section className="w-full h-[82vh] bg-linear-to-br from-gray-50 via-white to-gray-50 flex items-center">
+    <section className="w-full h-full xl:h-[82vh] bg-linear-to-br from-gray-50 via-white to-gray-50 flex items-center">
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8 md:py-18 py-12">
         <div className="grid gap-12 lg:gap-16 md:grid-cols-2 items-center">
@@ -24,12 +24,12 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-              <Link href="/contacto" className="group relative bg-[#4C5F26] text-white px-8 py-4 rounded-lg font-semibold shadow-lg shadow-[#4C5F26]/25 hover:shadow-xl hover:shadow-[#4C5F26]/30 hover:-translate-y-0.5 transition-all duration-200">
+              <Link href="/#contacto" className="group relative bg-[#4C5F26] text-white px-8 py-4 rounded-lg font-semibold shadow-lg shadow-[#4C5F26]/25 hover:shadow-xl hover:shadow-[#4C5F26]/30 hover:-translate-y-0.5 transition-all duration-200">
                 Solicitar demo
                 <span className="absolute inset-0 rounded-lg bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></span>
               </Link>
 
-              <Link href="/servicios" className="group relative border-2 border-[#4C5F26] text-[#4C5F26] px-8 py-4 rounded-lg font-semibold hover:bg-[#4C5F26] hover:text-white transition-all duration-200">
+              <Link href="/#servicios" className="group relative border-2 border-[#4C5F26] text-[#4C5F26] px-8 py-4 rounded-lg font-semibold hover:bg-[#4C5F26] hover:text-white transition-all duration-200">
                 Ver más
               </Link>
             </div>

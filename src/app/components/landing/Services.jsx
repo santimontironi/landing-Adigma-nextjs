@@ -1,5 +1,6 @@
 import ModuleCard from '@/app/components/ui/ModuleCard'
 import serviceData from '@/data/modulesData'
+import Link from 'next/link'
 
 const Services = () => {
   
@@ -42,9 +43,9 @@ const Services = () => {
             <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
               Implementamos Odoo de forma personalizada según las necesidades de tu empresa
             </p>
-            <button className="bg-white text-[#4C5F26] font-bold px-8 py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <Link href='/#contacto' className="bg-white text-[#4C5F26] font-bold px-4 py-4 xl:px-8 xl:py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
               Solicitar Consultoría Gratuita
-            </button>
+            </Link>
           </div>
         </div>
       </div>
