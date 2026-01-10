@@ -65,13 +65,13 @@ const Contact = () => {
                   <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
                     Nombre *
                   </label>
-                  <input type="text" id="name" name="name" required className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4C5F26] focus:border-transparent transition-all" placeholder="Tu nombre" />
+                  <input {...register("name", { required: true })} type="text" id="name" name="name" required className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4C5F26] focus:border-transparent transition-all" placeholder="Tu nombre" />
                 </div>
                 <div>
                   <label htmlFor="surname" className="block text-gray-700 font-medium mb-2">
                     Apellido *
                   </label>
-                  <input type="text" id="surname" name="surname" required className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4C5F26] focus:border-transparent transition-all" placeholder="Tu apellido" />
+                  <input {...register("surname", { required: true })} type="text" id="surname" name="surname" required className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4C5F26] focus:border-transparent transition-all" placeholder="Tu apellido" />
                 </div>
               </div>
 
@@ -79,26 +79,25 @@ const Contact = () => {
                 <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
                   Email *
                 </label>
-                <input type="email" id="email" name="email" required className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4C5F26] focus:border-transparent transition-all" placeholder="tu@email.com" />
+                <input {...register("email", { required: true })} type="email" id="email" name="email" required className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4C5F26] focus:border-transparent transition-all" placeholder="tu@email.com" />
               </div>
 
               <div>
                 <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
                   Teléfono *
                 </label>
-                <input type="tel" id="phone" name="phone" required className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4C5F26] focus:border-tr transition-all" placeholder="+54 9 11 1234-5678" />
+                <input {...register("phone", { required: true })} type="tel" id="phone" name="phone" required className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4C5F26] focus:border-tr transition-all" placeholder="+54 9 11 1234-5678" />
               </div>
 
               <div>
                 <label htmlFor="content" className="block text-gray-700 font-medium mb-2">
                   Mensaje *
                 </label>
-                <textarea id="content" name="content" required rows="5" className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4C5F26] focus:border-tr trans resize-none" placeholder="Cuéntanos sobre tu proyecto o consulta..."
+                <textarea {...register("content", { required: true })} id="content" name="content" required rows="5" className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4C5F26] focus:border-tr trans resize-none" placeholder="Cuéntanos sobre tu proyecto o consulta..."
                 ></textarea>
               </div>
 
               <button type="submit" className="w-full cursor-pointer bg-[#4C5F26] hover:bg-[#3d4c1f] text-white font-bold py-4 rounded-xl transition-all duration-300 transform hover:scal shadow-lg flex items-center justify-center gap-2">
-                <i className="bi bi-send-fill"></i>
                 Enviar Mensaje
               </button>
 
