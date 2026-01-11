@@ -6,6 +6,10 @@ const Contact = () => {
 
   const { register, handleSubmit, reset, formState: { errors } } = useForm()
 
+  async function formSubmit(data){
+    
+  }
+
   return (
     <section id="contacto" className="relative bg-[#4C5F26] py-20 px-5 md:px-12 lg:px-20 overflow-hidden">
 
@@ -58,7 +62,7 @@ const Contact = () => {
               Envíanos un Mensaje
             </h3>
 
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit(formSubmit)}>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
