@@ -39,20 +39,8 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <ItemContact logo="bi bi-envelope-fill" title="Email" data="contacto@adigma.com" />
-                <ItemContact logo="bi bi-telephone-fill" title="Teléfono" data="+52 55 1234 5678" />
+                <ItemContact logo="bi bi-telephone-fill" title="Teléfono" data="+54 9 3476 64-7997" />
                 <ItemContact logo="bi bi-geo-alt-fill" title="Ubicación" data="Santa Fé, Argentina" />
-              </div>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 w-73 xl:w-50">
-              <h3 className="text-2xl font-bold text-white mb-6">Síguenos</h3>
-              <div className="flex gap-4">
-                <a href="#" className="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110" >
-                  <i className="bi bi-linkedin text-white text-xl"></i>
-                </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110">
-                  <i className="bi bi-instagram text-white text-xl"></i>
-                </a>
               </div>
             </div>
           </div>
