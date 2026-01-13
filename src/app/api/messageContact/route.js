@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: "hostinger",
     host: process.env.EMAIL_HOST,
     port: 587, 
     secure: false,
