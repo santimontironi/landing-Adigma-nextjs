@@ -30,7 +30,7 @@ const Footer = () => {
                                     href="/"
                                     className="text-white/80 hover:text-white transition-colors duration-300 flex items-center gap-2 group"
                                 >
-                                    <i className="bi bi-chevron-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                                    
                                     Inicio
                                 </Link>
                             </li>
@@ -39,7 +39,7 @@ const Footer = () => {
                                     href="#nosotros"
                                     className="text-white/80 hover:text-white transition-colors duration-300 flex items-center gap-2 group"
                                 >
-                                    <i className="bi bi-chevron-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                                    
                                     Quiénes Somos
                                 </Link>
                             </li>
@@ -48,7 +48,7 @@ const Footer = () => {
                                     href="#servicios"
                                     className="text-white/80 hover:text-white transition-colors duration-300 flex items-center gap-2 group"
                                 >
-                                    <i className="bi bi-chevron-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                                    
                                     Servicios
                                 </Link>
                             </li>
@@ -57,7 +57,7 @@ const Footer = () => {
                                     href="#contacto"
                                     className="text-white/80 hover:text-white transition-colors duration-300 flex items-center gap-2 group"
                                 >
-                                    <i className="bi bi-chevron-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                                   
                                     Contacto
                                 </Link>
                             </li>
@@ -70,25 +70,25 @@ const Footer = () => {
                         <ul className="space-y-3">
                             <li>
                                 <h5 className="text-white/80 hover:text-white transition-colors duration-300 flex items-center gap-2 group" >
-                                    <i className="bi bi-chevron-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                                    
                                     Implementación Odoo
                                 </h5>
                             </li>
                             <li>
                                 <h5 className="text-white/80 hover:text-white transition-colors duration-300 flex items-center gap-2 group">
-                                    <i className="bi bi-chevron-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                                    
                                     Consultoría ERP
                                 </h5>
                             </li>
                             <li>
                                 <h5 className="text-white/80 hover:text-white transition-colors duration-300 flex items-center gap-2 group" >
-                                    <i className="bi bi-chevron-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                                    
                                     Capacitación
                                 </h5>
                             </li>
                             <li>
                                 <h5 className="text-white/80 hover:text-white transition-colors duration-300 flex items-center gap-2 group">
-                                    <i className="bi bi-chevron-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                                    
                                     Soporte Técnico
                                 </h5>
                             </li>
@@ -106,12 +106,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-start gap-3">
                                 <i className="bi bi-envelope-fill text-[#4C5F26] text-xl mt-1"></i>
-                                <a
-                                    href="mailto:contacto@adigma.com"
-                                    className="text-white/80 hover:text-white transition-colors"
-                                >
-                                    contacto@adigma.com
-                                </a>
+                                contacto@adigmasolutions.com
                             </li>
                             <li className="flex items-start gap-3">
                                 <i className="bi bi-telephone-fill text-[#4C5F26] text-xl mt-1"></i>

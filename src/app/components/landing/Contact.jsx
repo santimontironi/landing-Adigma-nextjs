@@ -45,7 +45,7 @@ const Contact = () => {
               </h3>
 
               <div className="space-y-6">
-                <ItemContact logo="bi bi-envelope-fill" title="Email" data="contacto@adigma.com" />
+                <ItemContact logo="bi bi-envelope-fill" title="Email" data="contacto@adigmasolutions.com" />
                 <ItemContact logo="bi bi-telephone-fill" title="Teléfono" data="+54 9 3476 64-7997" />
                 <ItemContact logo="bi bi-geo-alt-fill" title="Ubicación" data="Santa Fé, Argentina" />
               </div>
