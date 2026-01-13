@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/libs/prisma";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
@@ -18,16 +17,6 @@ const transporter = nodemailer.createTransport({
 export const POST = async (request) => {
     try {
         const { email, name, surname, phone, content } = await request.json();
-
-        const data = await prisma.message.create({
-            data: {
-                email: email,
-                name: name,
-                surname: surname,
-                phone: phone,
-                content: content
-            }
-        });
 
         await transporter.sendMail({
             from: `"Contacto Web" <${process.env.EMAIL_USER}>`, 
@@ -53,7 +42,7 @@ export const POST = async (request) => {
             `
         });
 
-        return NextResponse.json({ data: data }, { status: 200 });
+        return NextResponse.json({ status: 200 });
     }
     catch (error) {
         return NextResponse.json({ error: error.message }, { status: 500 });
