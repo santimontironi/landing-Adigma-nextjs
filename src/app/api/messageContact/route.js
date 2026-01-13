@@ -1,28 +1,28 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const transporter = nodemailer.createTransport({
-    service: "hostinger",
-    host: process.env.EMAIL_HOST,
-    port: 587, 
-    secure: false,
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-    },
-    tls: {
-        rejectUnauthorized: false
-    }
-});
-
 export const POST = async (request) => {
     try {
         const { email, name, surname, phone, content } = await request.json();
 
+        const transporter = nodemailer.createTransport({
+            service: "hostinger",
+            host: process.env.EMAIL_HOST,
+            port: 587,
+            secure: false,
+            auth: {
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS,
+            },
+            tls: {
+                rejectUnauthorized: false
+            }
+        });
+
         await transporter.sendMail({
-            from: `"Contacto Web" <${process.env.EMAIL_USER}>`, 
-            to: process.env.EMAIL_TO,                           
-            replyTo: email,                                     
+            from: `"Contacto Web" <${process.env.EMAIL_USER}>`,
+            to: process.env.EMAIL_TO,
+            replyTo: email,
             subject: "Adigma - Contacto",
             text: content,
             html: `
