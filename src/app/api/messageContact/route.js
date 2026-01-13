@@ -6,9 +6,8 @@ export const POST = async (request) => {
         const { email, name, surname, phone, content } = await request.json();
 
         const transporter = nodemailer.createTransport({
-            service: "hostinger",
             host: process.env.EMAIL_HOST,
-            port: 587,
+            port: 587, 
             secure: false,
             auth: {
                 user: process.env.EMAIL_USER,
@@ -19,10 +18,10 @@ export const POST = async (request) => {
             }
         });
 
-        await transporter.sendMail({
-            from: `"Contacto Web" <${process.env.EMAIL_USER}>`,
-            to: process.env.EMAIL_TO,
-            replyTo: email,
+        const info = await transporter.sendMail({
+            from: `"Contacto Web" <${process.env.EMAIL_USER}>`, 
+            to: process.env.EMAIL_TO,                           
+            replyTo: email,                                     
             subject: "Adigma - Contacto",
             text: content,
             html: `
@@ -43,9 +42,18 @@ export const POST = async (request) => {
             `
         });
 
-        return NextResponse.json({ status: 200 });
+        // ✅ Cerrar la conexión después de enviar
+        transporter.close();
+
+        return NextResponse.json({ 
+            success: true,
+            message: 'Email enviado correctamente'
+        }, { status: 200 });
     }
     catch (error) {
-        return NextResponse.json({ error: error.message }, { status: 500 });
+        console.error('Error al enviar email:', error);
+        return NextResponse.json({ 
+            error: error.message 
+        }, { status: 500 });
     }
-}
+};
