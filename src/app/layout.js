@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Adigma",
   description: "Implementamos Odoo para digitalizar y optimizar tu negocio de manera eficiente y eficaz.",
+  icons: {
+    icon: "/images/logo.ico",
+  }
 };
 
 export default function RootLayout({ children }) {

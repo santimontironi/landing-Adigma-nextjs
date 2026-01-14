@@ -52,7 +52,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-2xl">
+          <div className="bg-white rounded-2xl p-8 w-[87%] 2xl:w-[95%] shadow-2xl">
             <h3 className="text-3xl font-bold text-[#4C5F26] mb-6">
               Envíanos un Mensaje
             </h3>
